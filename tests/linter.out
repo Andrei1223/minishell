@@ -1,0 +1,39 @@
+cd .. && checkpatch.pl -f src/*.c
+No typos will be found - file '/usr/local/bin/spelling.txt': No such file or directory
+No structs that should be const will be found - file '/usr/local/bin/const_structs.checkpatch': No such file or directory
+---------
+src/cmd.c
+---------
+total: 0 errors, 0 warnings, 444 lines checked
+
+src/cmd.c has no obvious style problems and is ready for submission.
+----------
+src/main.c
+----------
+total: 0 errors, 0 warnings, 96 lines checked
+
+src/main.c has no obvious style problems and is ready for submission.
+-----------
+src/utils.c
+-----------
+total: 0 errors, 0 warnings, 86 lines checked
+
+src/utils.c has no obvious style problems and is ready for submission.
+
+NOTE: Ignored message types: ARRAY_SIZE AVOID_EXTERNS C99_COMMENTS EMAIL_SUBJECT ENOSYS FILE_PATH_CHANGES GIT_COMMIT_ID NEW_TYPEDEFS SYMBOLIC_PERMS
+cd .. && cpplint --recursive src/
+/bin/sh: 1: cpplint: not found
+Makefile:22: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
+cd .. && shellcheck checker/*.sh
+/bin/sh: 1: shellcheck: not found
+Makefile:22: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
+cd .. && shellcheck tests/*.sh
+/bin/sh: 1: shellcheck: not found
+Makefile:22: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
+cd .. && shellcheck tests/_test/*.sh
+/bin/sh: 1: shellcheck: not found
+Makefile:22: recipe for target 'lint' failed
+make: [lint] Error 127 (ignored)
