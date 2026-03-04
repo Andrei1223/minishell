@@ -72,7 +72,7 @@ Start the shell in interactive mode:
 ./minishell
 ```
 
-## Testing and Grading
+## Testing
 
 The test script validates accuracy, operator logic and redirection.
 ```
